@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { HiOutlineMail } from 'react-icons/hi';
+import { MdPersonOutline } from 'react-icons/md';
 import { getToken } from '../fetchAPI';
 import { addEmail, sendToken } from '../redux/actions';
 
@@ -19,10 +21,11 @@ class LoginForm extends Component {
   }
 
   handleChange = ({ target: { name, value } }) => {
-    const size = 1;
+    const size = 10;
+    const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     this.setState({ [name]: value }, () => {
       const { loginEmail, loginName } = this.state;
-      if (loginEmail.length >= size && loginName.length >= size) {
+      if (loginEmail.match(regex) && loginName.length >= size) {
         this.setState({ botaoDisable: false });
       } else {
         this.setState({ botaoDisable: true });
@@ -48,34 +51,46 @@ class LoginForm extends Component {
     const { botaoDisable, loginEmail, loginName } = this.state;
     return (
       <div>
-        Login
+        <h1 className="title1">Login</h1>
         <form>
-          <label htmlFor="loginName">
-            Nome
-            <input
-              data-testid="input-player-name"
-              id="loginName"
-              name="loginName"
-              onChange={ this.handleChange }
-              value={ loginName }
-            />
-          </label>
-
-          <label htmlFor="loginEmail">
-            Email
-            <input
-              data-testid="input-gravatar-email"
-              id="loginEmail"
-              name="loginEmail"
-              onChange={ this.handleChange }
-              value={ loginEmail }
-            />
-          </label>
+          <div className="field">
+            <p className="control has-icons-left has-icons-right">
+              <input
+                className="input"
+                type="text"
+                placeholder="Nome"
+                id="loginName"
+                name="loginName"
+                onChange={ this.handleChange }
+                value={ loginName }
+              />
+              <span className="icon is-small is-left">
+                <MdPersonOutline />
+              </span>
+            </p>
+          </div>
+          <div className="field">
+            <p className="control has-icons-left has-icons-right">
+              <input
+                className="input"
+                type="email"
+                placeholder="Email"
+                id="loginEmail"
+                name="loginEmail"
+                onChange={ this.handleChange }
+                value={ loginEmail }
+              />
+              <span className="icon is-small is-left">
+                <HiOutlineMail />
+              </span>
+            </p>
+          </div>
           <button
             type="button"
             data-testid="btn-play"
             disabled={ botaoDisable }
             onClick={ this.handleButton }
+            className="button is-black"
           >
             Play
           </button>

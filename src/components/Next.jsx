@@ -7,7 +7,12 @@ class Next extends Component {
     const { click } = this.props;
     return (
       <div>
-        <button data-testid="btn-next" type="button" onClick={ click }>
+        <button
+          className="button is-light"
+          data-testid="btn-next"
+          type="button"
+          onClick={ click }
+        >
           Next
         </button>
       </div>

@@ -1,7 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.fidTitle {
+  font-family: 'Bebas Neue';
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.divRanks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.divPaiRank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ranck {
+  width: 300px;
+  background-color: rgb(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 5%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.btn {
+  margin-top: 50px;
+  margin-left: 20px;
 }
 
 .App {
@@ -26,6 +63,27 @@ body {
   .App-logo {
     animation: shake infinite 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   }
+}
+
+.title1 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+/* .fed {
+  background-color: blue;
+} */
+
+.game {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.quetions {
+  margin-bottom: 7px;
 }
 
 .App-header {

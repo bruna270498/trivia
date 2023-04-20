@@ -7,8 +7,8 @@ class Feedback extends Component {
   render() {
     const { history } = this.props;
     return (
-      <div>
-        {/* <p data-testid="feedback-text">FEEDBACK</p> */}
+      <div className="game">
+        <p data-testid="feedback-text" className="fidTitle">FEEDBACK</p>
         <FeedbackForm history={ history } />
       </div>
     );

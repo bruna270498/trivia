@@ -9,12 +9,12 @@ class Game extends Component {
     const emailConverted = md5(email).toString();
     return (
       <header>
-        <h1 data-testid="header-player-name">{ nome }</h1>
         <img
           src={ `https://www.gravatar.com/avatar/${emailConverted}` }
           data-testid="header-profile-picture"
           alt="avatar"
         />
+        <h1 data-testid="header-player-name">{ nome }</h1>
         <p data-testid="header-score">{ placar }</p>
       </header>
     );

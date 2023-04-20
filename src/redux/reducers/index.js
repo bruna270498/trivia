@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import token from './token';
 import player from './score';
+import rank from './rank';
 
 const INITIAL_STATE = {
   email: '',
@@ -23,6 +24,7 @@ const rootReducer = combineReducers({
   email: user,
   token,
   player,
+  rank,
 });
 
 export default rootReducer;

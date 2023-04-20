@@ -9,6 +9,7 @@ export const addEmail = (email, nome) => ({
 export const TOKEN_ID = 'TOKEN_ID';
 export const SECONDS = 'SECONDS';
 export const ADD_SCORE = 'SCORE';
+export const ADD_RANK = 'RANK';
 
 // Action Creator
 
@@ -27,9 +28,12 @@ export const addScore = (score, assertions) => ({
   },
 });
 
-// export const countSeconds = (second) => ({
-//   type: SECONDS,
-//   payload: {
-//     second,
-//   },
-// });
+export const addRank = (score, assertions, email, nome) => ({
+  type: ADD_RANK,
+  payload: {
+    score,
+    assertions,
+    email,
+    nome,
+  },
+});

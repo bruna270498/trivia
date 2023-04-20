@@ -152,7 +152,8 @@ class Questions extends React.Component {
                       }
                       className={
                         (e === questionsObject[index].correct_answer)
-                          ? 'correct-answer' : 'wrong-answer'
+                          ? 'correct-answer button is-primary is-medium is-fullwidth quetions'
+                          : 'wrong-answer button is-primary is-medium is-fullwidth quetions'
                       }
                       disabled={ seconds === 0 }
                     >
@@ -162,6 +163,7 @@ class Questions extends React.Component {
                 ))}
               </div>
               { answered && <Next click={ this.handleNext } />}
+              { seconds === 0 && <Next click={ this.handleNext } />}
             </div>
           ) }
 

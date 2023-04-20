@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoginForm from '../components/LoginForm';
 
@@ -11,13 +10,7 @@ class Login extends React.Component {
     return (
       <div className="App">
         <img src={ logo } className="App-logo" alt="logo" />
-        <p>SUA VEZ</p>
         <LoginForm history={ history } />
-        <Link to="/configuration">
-          <button data-testid="btn-settings" type="button">
-            Configurações
-          </button>
-        </Link>
       </div>
     );
   }

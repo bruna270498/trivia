@@ -7,7 +7,7 @@ class Main extends React.Component {
   render() {
     const { history } = this.props;
     return (
-      <div>
+      <div className="game">
         <Game />
         <Questions history={ history } />
       </div>
