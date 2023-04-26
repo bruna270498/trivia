@@ -3,6 +3,17 @@
 
 Foi desenvolvido um jogo de perguntas e respostas baseado no jogo Trivia (tipo um show do milhão americano rs) utilizando React e Redux, desenvolvendo em grupo suas funcionalidades de acordo com as demandas definidas em um quadro Kanban. 
 
+Trabalhamos em equipe utilizando metodologias ágeis como Trello, Slack e Zoom para desenvolver nossas habilidades de colaboração. Além disso, realizamos reuniões diárias de 10 minutos para definir as tarefas do dia e utilizamos o Git para o versionamento de código.
+
+### Colaboradores:
+
+1. [Bruna Almeida](https://www.linkedin.com/in/bruna-almeida-soares);
+2. [Leandro Batista](https://www.linkedin.com/in/leandrobatistac/);
+3. [Giovana Gabriela Zupiroli](https://www.linkedin.com/in/giovanazupiroli/);
+4. Lívia Fernanda;
+5. Lucas Teixeira;
+6. Leonardo Vinicius Carlota;
+
 ### Habilidades desenvolvidas:
 
 - Criar um store Redux em aplicações React
