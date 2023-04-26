@@ -38,7 +38,7 @@ Foi desenvolvido um jogo de perguntas e respostas baseado no jogo Trivia (tipo u
  ```bash
  # clone o repositorio
  
-- git clone git@github.com:bruna270498/Project-Tryunfo.git
+- git clone git@github.com:bruna270498/trivia.git
 
 # Instale as dependências
 
